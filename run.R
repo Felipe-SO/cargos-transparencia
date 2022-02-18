@@ -1,7 +1,7 @@
 ## Autor: Felipe Scaccabarrozzi
 
 # Cambiar a carpeta donde se encuentran los scripts
-setwd("........../Automatización Cargos")
+setwd("........../cargos-transparencia")
 
 # Importamos los scripts con las funciones
 source("downloader.r")
