@@ -15,6 +15,7 @@ ref = read_xlsx("entidad_numero.xlsx")
 
 options(timeout=120)
 
+## https://rdrr.io/bioc/recount/man/download_retry.html
 download_retry <- function(url, destfile = basename(url), mode = "wb",
                            N.TRIES = 3L, ...) {
   ## Based on http://bioconductor.org/developers/how-to/web-query/
@@ -46,6 +47,7 @@ download_retry <- function(url, destfile = basename(url), mode = "wb",
   
   invisible(result)
 }
+
 descargar = function(filename, id, year, month){
   url = paste("http://transparencia.gob.pe/personal/pte_transparencia_personal_genera.aspx?id_entidad=",id,"&in_anno_consulta=",year,"&ch_mes_consulta=", month,"&ch_tipo_regimen=0&vc_dni_funcionario=&vc_nombre_funcionario=&ch_tipo_descarga=1", sep = "")
   dest = paste("Data/preconsolidada/",filename,".html", sep = "")
