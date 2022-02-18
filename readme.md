@@ -7,6 +7,8 @@
     + Casi todas las funciones dependen del archivo de referencia. Asegurarse de que el formato sea exactamente el mismo (incluyendo mayúsculas y minúsculas y el orden de las columnas).
 3. Dentro del script "run.R" hay que cambiar la dirección de trabajo a la dirección donde se encuentren los scripts.
 4. No cambiar el nombre de las carpetas ni eliminarlas hasta que todo esté listo para entregar.
+5. Por default, el programa está configurado para utilizar los años 2013-2021. Si se desean utilizar otros años, estos se pueden definir mediante la opción "years".
+    + E.g. `options(years = 2015:2020)`
 
 ### Descarga
 *Nota: En el script de descargas hay varias funciones que no serán utilizadas.*
