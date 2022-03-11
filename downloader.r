@@ -69,7 +69,7 @@ descargar_simple = function(filename, id, year, month){
 
 download_group = function(entidades){
   for (i in entidades){
-    for (year in getOption("years", default = 2013:2021){
+    for (year in getOption("years", default = 2013:2021)){
       for (month in 1:12){
         descargar(paste(ref[i,1],year,month, sep = "_"), ref[i,2], year, month)
       }
@@ -78,7 +78,7 @@ download_group = function(entidades){
 }
 
 download_entity = function(cluster, entidad){
-  for (year in getOption("years", default = 2013:2021){
+  for (year in getOption("years", default = 2013:2021)){
     descarga_temp = function(month){
       filedir = paste("Data/preconsolidada", paste(ref[entidad,1],year,month, sep = "_"),".html", sep = "")
       if(file.exists(filedir) == F | file.size(filedir) %in% c(0,1701)){
@@ -95,7 +95,7 @@ missing_files = function(){
   months = c()
   dir_temp = "Data/preconsolidada/"
   for (i in 1:length(ref$Entidades)){
-    for (year in getOption("years", default = 2013:2021){
+    for (year in getOption("years", default = 2013:2021)){
       for (month in 1:12){
         filename = paste(paste(ref$Entidades[i],year,month, sep = "_"),".html", sep = "")
         filedir = paste(dir_temp, filename, sep ="")
@@ -131,7 +131,7 @@ empty_files = function(){
   months = c()
   dir_temp = "Data/preconsolidada/"
   for (i in 1:length(ref$Entidades)){
-    for (year in getOption("years", default = 2013:2021){
+    for (year in getOption("years", default = 2013:2021)){
       for (month in 1:12){
         filename = paste(paste(ref$Entidades[i],year,month, sep = "_"),".html", sep = "")
         filedir = paste(dir_temp, filename, sep ="")
@@ -151,7 +151,7 @@ empty_entity = function(){
   index = c()
   empty_list = empty_files()
   for (i in 1:nrow(ref)){
-    if (nrow(empty_list %>% filter(index_entidad == i)) == 12*{length(getOption("years", default = 2013:2021))}{
+    if ((nrow(empty_list %>% filter(index_entidad == i))) == 12*{length(getOption("years", default = 2013:2021))}){
       index = append(index, i)
     }
   }
@@ -224,3 +224,4 @@ download_december = function(cluster){
   entities = empty_entity()
   parLapply(cluster, entities, descarga_dec_temp)
 }
+
