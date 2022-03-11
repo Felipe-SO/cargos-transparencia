@@ -1,4 +1,5 @@
 ## Autor: Felipe Scaccabarrozzi
+## Última modificación: 11/03/2022
 
 # Instalar y cargar bibliotecas necesarias
 packages = c("readxl", "rvest", "data.table", "xlsx", "writexl")
