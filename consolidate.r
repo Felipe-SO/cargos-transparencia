@@ -14,7 +14,7 @@ ref = read_xlsx("entidad_numero.xlsx")
 
 convert_csv = function(entity){
   entidad = ref$Entidades[entity]
-  for (year in getOption("years", default = 2013:2021){
+  for (year in getOption("years", default = 2013:2021)){
     for (month in 1:12){
       html_file = paste("Data/preconsolidada/", 
                         paste(entidad, year, month, sep = "_"),
@@ -54,4 +54,5 @@ consolidate_entity = function(entity){
   }
   fwrite(df, file = paste("Data/Cargos/", entidad, ".csv", sep = ""))
 }
+
 
