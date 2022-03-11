@@ -1,5 +1,5 @@
 ## Autor: Felipe Scaccabarrozzi
-## Ultima Actualización: 25/01/2022
+## Ultima Actualización: 11/03/2022
 
 # Instalar y cargar bibliotecas necesarias
 packages = c("readxl", "parallel", "dplyr", "pbapply")
